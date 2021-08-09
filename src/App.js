@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
@@ -28,6 +29,7 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
         </Switch>
         <Footer />
       </div>
