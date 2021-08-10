@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/Programming.svg";
 import Particle from "../Particle";
+import Tilt from "react-parallax-tilt";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -9,7 +10,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-      <Particle /> 
+        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -31,7 +32,9 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
+              <Tilt>
                 <img src={homeLogo} alt="home pic" className="img-fluid" />
+              </Tilt>
             </Col>
           </Row>
         </Container>

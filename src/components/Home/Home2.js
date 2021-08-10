@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/Version control.svg";
+import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaTelegram } from "react-icons/fa";
 
@@ -14,7 +15,8 @@ function Home2() {
               INTRODUCING <span className="blue"> MYSELF </span>
             </h1>
             <p className="home-about-body">
-              I love to do Competitive Programming and solve Real-World Problems.
+              I love to do Competitive Programming and solve Real-World
+              Problems.
               <br />
               <br />I am fluent in Languages like
               <i>
@@ -42,16 +44,15 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="Avtar">
+            <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="blue">connect </span>with me
-            </p>
+          <h1><span className="blue">CONNECT</span> WITH ME</h1>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a

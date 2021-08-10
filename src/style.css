@@ -434,6 +434,36 @@ html {
   outline: none !important;
   box-shadow: none !important;
 }
+/* --------- */
+/* Projects */
+/* --------- */
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 72px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.068) !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.1) !important;
+  overflow: hidden !important;
+  border: 3px solid rgba(255, 255, 255, 0.616) !important;
+}
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
@@ -506,5 +536,16 @@ html {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+}
+.Avtar {
+  justify-content: center !important;
+  padding-top: 9em !important;
+}
+
+@media (max-width: 767px) {
+  .Avtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
   }
 }

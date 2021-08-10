@@ -8,6 +8,7 @@ import Tools from "./Tools";
 import CP from "./CP";
 import Aboutcard from "./AboutCard";
 import devImg from "../../Assets/Developer.svg";
+import Tilt from "react-parallax-tilt";
 
 function About() {
   return (
@@ -33,7 +34,9 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={devImg} alt="about" className="img-fluid" />
+            <Tilt>
+              <img src={devImg} alt="about" className="img-fluid" />
+            </Tilt>
           </Col>
         </Row>
         <h1 className="project-heading">
